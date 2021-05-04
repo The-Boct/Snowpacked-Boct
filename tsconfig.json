@@ -2,11 +2,10 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "esnext",
-    "target": "esnext",
+    "target": "es2019",
     "moduleResolution": "node",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "baseUrl": "./",
-    /* paths - import rewriting/resolving */
     "paths": {
       // If you configured any Snowpack aliases, add them here.
       // Add this line to get types for streaming imports (packageOptions.source="remote"):
@@ -15,7 +14,7 @@
     },
     /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,
-    /* Additional Options */
+
     "strict": true,
     "skipLibCheck": true,
     "types": ["mocha", "snowpack-env"],
